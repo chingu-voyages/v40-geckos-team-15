@@ -4,7 +4,7 @@ module.exports = {
   mode: "development",
   entry: path.resolve(__dirname, "./src/index.js"),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
     clean: true,
     assetModuleFilename: "[name][ext]",
@@ -19,7 +19,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.resolve(__dirname, "dist"),
+      directory: path.resolve(__dirname, "build"),
     },
     port: 8080,
     open: true,
@@ -34,7 +34,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.js$/,
+        test: /\.js|jsx$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
