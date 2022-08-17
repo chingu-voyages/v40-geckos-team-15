@@ -1,7 +1,7 @@
 let path = require("path");
 let htmlwebplug = require("html-webpack-plugin");
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: path.resolve(__dirname, "./src/index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -9,6 +9,7 @@ module.exports = {
     clean: true,
     assetModuleFilename: "[name][ext]",
   },
+  devtool: "source-map",
   plugins: [
     new htmlwebplug({
       title: "webpack app",
@@ -16,6 +17,16 @@ module.exports = {
       template: "src/template.html",
     }),
   ],
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
+    port: 8080,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
