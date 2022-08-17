@@ -1,14 +1,15 @@
 let path = require("path");
 let htmlwebplug = require("html-webpack-plugin");
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: path.resolve(__dirname, "./src/index.js"),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
     clean: true,
     assetModuleFilename: "[name][ext]",
   },
+  devtool: "source-map",
   plugins: [
     new htmlwebplug({
       title: "webpack app",
@@ -16,6 +17,16 @@ module.exports = {
       template: "src/template.html",
     }),
   ],
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, "build"),
+    },
+    port: 8080,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
@@ -23,7 +34,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.js$/,
+        test: /\.js|jsx$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
