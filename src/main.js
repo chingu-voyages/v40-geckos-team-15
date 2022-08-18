@@ -7,7 +7,6 @@ import Course from "./pages/Course";
 export default function Main(props) {
   return (
     <>
-      <p>gamed</p>
       <ul>
         <li>
           <Link to="/">Home</Link>
