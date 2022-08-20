@@ -2,6 +2,44 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/CourseOutline.js":
+/*!*****************************************!*\
+  !*** ./src/components/CourseOutline.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function CourseOutline(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Course Outline"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    style: {
+      listStyleType: "none",
+      backgroundColor: "#f8f3ec",
+      padding: "20px 10px",
+      borderRadius: "10px"
+    }
+  }, props.lessons.map(function (lesson) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      style: {
+        margin: "20px",
+        color: "#2a8a6d",
+        padding: "10px 10px 20px 10px",
+        borderBottom: "#d1d1d1 2px solid"
+      }
+    }, lesson.title);
+  })));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CourseOutline);
+
+/***/ }),
+
 /***/ "./src/components/editor.js":
 /*!**********************************!*\
   !*** ./src/components/editor.js ***!
@@ -94,6 +132,209 @@ function Footer() {
 
 /***/ }),
 
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Main)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/Home */ "./src/pages/Home.js");
+/* harmony import */ var _pages_Course__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/Course */ "./src/pages/Course.js");
+/* harmony import */ var _pages_Lesson__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Lesson */ "./src/pages/Lesson.js");
+/* harmony import */ var _pages_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/About */ "./src/pages/About.js");
+/* harmony import */ var _pages_Contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Contact */ "./src/pages/Contact.js");
+//@ts-nocheck
+
+
+
+
+
+
+
+function Main(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/"
+  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/html"
+  }, "HTML"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/html/lesson-1"
+  }, "Lesson 1")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/css"
+  }, "CSS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/css/lesson-1"
+  }, "Lesson 1")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/javascript"
+  }, "Javascript")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/about"
+  }, "About Us")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/contact"
+  }, "Contact Us"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    exact: true,
+    path: "/",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    path: "/:course",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Course__WEBPACK_IMPORTED_MODULE_2__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    path: "/:course/:lesson",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Lesson__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    exact: true,
+    path: "/about",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_About__WEBPACK_IMPORTED_MODULE_4__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    exact: true,
+    path: "/contact",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Contact__WEBPACK_IMPORTED_MODULE_5__["default"], null)
+  })));
+}
+
+/***/ }),
+
+/***/ "./src/pages/About.js":
+/*!****************************!*\
+  !*** ./src/pages/About.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function About() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "About Us"));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
+
+/***/ }),
+
+/***/ "./src/pages/Contact.js":
+/*!******************************!*\
+  !*** ./src/pages/Contact.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function Contact() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Contact Us"));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
+
+/***/ }),
+
+/***/ "./src/pages/Course.js":
+/*!*****************************!*\
+  !*** ./src/pages/Course.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var _components_CourseOutline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/CourseOutline */ "./src/components/CourseOutline.js");
+
+
+
+
+function Course() {
+  var _useParams = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useParams)(),
+      course = _useParams.course;
+
+  var lessons = [{
+    title: "What is HTML"
+  }, {
+    title: "HTML Tags Explained"
+  }, {
+    title: "HTML Tags Explained"
+  }, {
+    title: "HTML Tags Explained"
+  }];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Course name: ", course), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_CourseOutline__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    lessons: lessons
+  }));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Course);
+
+/***/ }),
+
+/***/ "./src/pages/Home.js":
+/*!***************************!*\
+  !*** ./src/pages/Home.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function Home() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "home"));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
+
+/***/ }),
+
+/***/ "./src/pages/Lesson.js":
+/*!*****************************!*\
+  !*** ./src/pages/Lesson.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+
+
+
+function Lesson() {
+  var _useParams = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useParams)(),
+      course = _useParams.course;
+
+  var _useParams2 = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useParams)(),
+      lesson = _useParams2.lesson;
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, course, " : ", lesson));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Lesson);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/editor.css":
 /*!******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/editor.css ***!
@@ -139,7 +380,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "footer {\r\n  position: absolute;\r\n  bottom: 0;\r\n  margin: auto;\r\n  width: 100%;\r\n  height: 25vh;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\nfooter div {\r\n  display: flex;\r\n  align-content: space-between;\r\n  flex-wrap: wrap;\r\n  width: 40px;\r\n  margin: auto;\r\n  position: relative;\r\n  top: 5%;\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  flex-wrap: wrap;\r\n}\r\nfooter div {\r\n  height: 100%;\r\n  cursor: pointer;\r\n}\r\ndiv.start {\r\n  font-weight: 500;\r\n  font-size: xx-large;\r\n}\r\ndiv.center {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  height: 70px;\r\n  width: 190px;\r\n  align-self: flex-start;\r\n  margin-top: 8px;\r\n  font-weight: 600;\r\n  font-size: 0.83rem;\r\n}\r\ndiv.end {\r\n  width: 200px;\r\n  font-weight: 700;\r\n}\r\ndiv.end > div > input:first-of-type {\r\n  outline: 2px solid var(--color-bg, #f8f3ec);\r\n  border: 2px solid var(--color-bg, #f8f3ec);\r\n  border-right: transparent;\r\n  width: 150px;\r\n  height: 100%;\r\n}\r\ndiv.end > div:last-child {\r\n  margin-top: 10px;\r\n  width: fit-content;\r\n  height: 30px;\r\n}\r\ndiv.end > div > button {\r\n  position: relative;\r\n  top: 1%;\r\n  right: 39px;\r\n  font-weight: bold;\r\n  border: none;\r\n  padding: 0px 10px;\r\n  height: 100%;\r\n  color: white;\r\n  background-color: var(--color-primary, #059669);\r\n}\r\n.after {\r\n  position: absolute;\r\n  left: 50px;\r\n  width: 90%;\r\n  height: fit-content;\r\n}\r\n.after::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 5px;\r\n  background-color: var(--color-bg, #f8f3ec);\r\n  bottom: -15px;\r\n}\r\n/* footer {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  height: 25vh;\r\n} */\r\n@media only screen and (max-width: 3000px) {\r\n  footer > div {\r\n    width: 10%;\r\n  }\r\n  .after {\r\n    bottom: 40px;\r\n  }\r\n  div.start {\r\n    text-align: start;\r\n  }\r\n  footer {\r\n    align-items: center;\r\n    justify-content: space-around;\r\n  }\r\n  div.end > div:last-child {\r\n    margin-top: 10px;\r\n  }\r\n  footer {\r\n    height: 25vh;\r\n  }\r\n}\r\n@media only screen and (max-width: 600px) {\r\n  footer > div {\r\n    width: 90%;\r\n  }\r\n  .after {\r\n    bottom: -50px;\r\n  }\r\n  div.start {\r\n    text-align: center;\r\n    height: 150px;\r\n    width: 190px;\r\n  }\r\n  footer {\r\n    height: fit-content;\r\n    margin-bottom: 50px;\r\n  }\r\n  footer > div:not(.after) {\r\n    margin: 15px 0;\r\n  }\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/css/footer.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,SAAS;EACT,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,4BAA4B;EAC5B,eAAe;EACf,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,OAAO;EACP,aAAa;EACb,kBAAkB;EAClB,SAAS;EACT,WAAW;EACX,eAAe;AACjB;AACA;EACE,YAAY;EACZ,eAAe;AACjB;AACA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,8BAA8B;EAC9B,eAAe;EACf,4BAA4B;EAC5B,YAAY;EACZ,YAAY;EACZ,sBAAsB;EACtB,eAAe;EACf,gBAAgB;EAChB,kBAAkB;AACpB;AACA;EACE,YAAY;EACZ,gBAAgB;AAClB;AACA;EACE,2CAA2C;EAC3C,0CAA0C;EAC1C,yBAAyB;EACzB,YAAY;EACZ,YAAY;AACd;AACA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,OAAO;EACP,WAAW;EACX,iBAAiB;EACjB,YAAY;EACZ,iBAAiB;EACjB,YAAY;EACZ,YAAY;EACZ,+CAA+C;AACjD;AACA;EACE,kBAAkB;EAClB,UAAU;EACV,UAAU;EACV,mBAAmB;AACrB;AACA;EACE,WAAW;EACX,kBAAkB;EAClB,WAAW;EACX,WAAW;EACX,0CAA0C;EAC1C,aAAa;AACf;AACA;;;;;;;;;;GAUG;AACH;EACE;IACE,UAAU;EACZ;EACA;IACE,YAAY;EACd;EACA;IACE,iBAAiB;EACnB;EACA;IACE,mBAAmB;IACnB,6BAA6B;EAC/B;EACA;IACE,gBAAgB;EAClB;EACA;IACE,YAAY;EACd;AACF;AACA;EACE;IACE,UAAU;EACZ;EACA;IACE,aAAa;EACf;EACA;IACE,kBAAkB;IAClB,aAAa;IACb,YAAY;EACd;EACA;IACE,mBAAmB;IACnB,mBAAmB;EACrB;EACA;IACE,cAAc;EAChB;AACF","sourcesContent":["footer {\r\n  position: absolute;\r\n  bottom: 0;\r\n  margin: auto;\r\n  width: 100%;\r\n  height: 25vh;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\nfooter div {\r\n  display: flex;\r\n  align-content: space-between;\r\n  flex-wrap: wrap;\r\n  width: 40px;\r\n  margin: auto;\r\n  position: relative;\r\n  top: 5%;\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  flex-wrap: wrap;\r\n}\r\nfooter div {\r\n  height: 100%;\r\n  cursor: pointer;\r\n}\r\ndiv.start {\r\n  font-weight: 500;\r\n  font-size: xx-large;\r\n}\r\ndiv.center {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  height: 70px;\r\n  width: 190px;\r\n  align-self: flex-start;\r\n  margin-top: 8px;\r\n  font-weight: 600;\r\n  font-size: 0.83rem;\r\n}\r\ndiv.end {\r\n  width: 200px;\r\n  font-weight: 700;\r\n}\r\ndiv.end > div > input:first-of-type {\r\n  outline: 2px solid var(--color-bg, #f8f3ec);\r\n  border: 2px solid var(--color-bg, #f8f3ec);\r\n  border-right: transparent;\r\n  width: 150px;\r\n  height: 100%;\r\n}\r\ndiv.end > div:last-child {\r\n  margin-top: 10px;\r\n  width: fit-content;\r\n  height: 30px;\r\n}\r\ndiv.end > div > button {\r\n  position: relative;\r\n  top: 1%;\r\n  right: 39px;\r\n  font-weight: bold;\r\n  border: none;\r\n  padding: 0px 10px;\r\n  height: 100%;\r\n  color: white;\r\n  background-color: var(--color-primary, #059669);\r\n}\r\n.after {\r\n  position: absolute;\r\n  left: 50px;\r\n  width: 90%;\r\n  height: fit-content;\r\n}\r\n.after::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 5px;\r\n  background-color: var(--color-bg, #f8f3ec);\r\n  bottom: -15px;\r\n}\r\n/* footer {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  height: 25vh;\r\n} */\r\n@media only screen and (max-width: 3000px) {\r\n  footer > div {\r\n    width: 10%;\r\n  }\r\n  .after {\r\n    bottom: 40px;\r\n  }\r\n  div.start {\r\n    text-align: start;\r\n  }\r\n  footer {\r\n    align-items: center;\r\n    justify-content: space-around;\r\n  }\r\n  div.end > div:last-child {\r\n    margin-top: 10px;\r\n  }\r\n  footer {\r\n    height: 25vh;\r\n  }\r\n}\r\n@media only screen and (max-width: 600px) {\r\n  footer > div {\r\n    width: 90%;\r\n  }\r\n  .after {\r\n    bottom: -50px;\r\n  }\r\n  div.start {\r\n    text-align: center;\r\n    height: 150px;\r\n    width: 190px;\r\n  }\r\n  footer {\r\n    height: fit-content;\r\n    margin-bottom: 50px;\r\n  }\r\n  footer > div:not(.after) {\r\n    margin: 15px 0;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "footer {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  flex-wrap: wrap;\r\n}\r\nfooter div {\r\n  height: 100%;\r\n  cursor: pointer;\r\n}\r\ndiv.start {\r\n  font-weight: 500;\r\n  font-size: xx-large;\r\n}\r\ndiv.center {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  height: 70px;\r\n  width: 190px;\r\n  align-self: flex-start;\r\n  margin-top: 8px;\r\n  font-weight: 600;\r\n  font-size: 0.83rem;\r\n}\r\ndiv.end {\r\n  width: 200px;\r\n  font-weight: 700;\r\n}\r\ndiv.end > div > input:first-of-type {\r\n  outline: 2px solid var(--color-bg, #f8f3ec);\r\n  border: 2px solid var(--color-bg, #f8f3ec);\r\n  border-right: transparent;\r\n  width: 150px;\r\n  height: 100%;\r\n}\r\ndiv.end > div:last-child {\r\n  margin-top: 10px;\r\n  width: fit-content;\r\n  height: 30px;\r\n}\r\ndiv.end > div > button {\r\n  position: relative;\r\n  top: 1%;\r\n  right: 39px;\r\n  font-weight: bold;\r\n  border: none;\r\n  padding: 0px 10px;\r\n  height: 100%;\r\n  color: white;\r\n  background-color: var(--color-primary, #059669);\r\n}\r\n.after {\r\n  position: absolute;\r\n  left: 50px;\r\n  width: 90%;\r\n  height: fit-content;\r\n}\r\n.after::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 5px;\r\n  background-color: var(--color-bg, #f8f3ec);\r\n  bottom: -15px;\r\n}\r\n/* footer {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  height: 25vh;\r\n} */\r\n@media only screen and (max-width: 3000px) {\r\n  footer > div {\r\n    width: 10%;\r\n  }\r\n  .after {\r\n    bottom: 40px;\r\n  }\r\n  div.start {\r\n    text-align: start;\r\n  }\r\n  footer {\r\n    align-items: center;\r\n    justify-content: space-around;\r\n  }\r\n  div.end > div:last-child {\r\n    margin-top: 10px;\r\n  }\r\n  footer {\r\n    height: 25vh;\r\n  }\r\n}\r\n@media only screen and (max-width: 600px) {\r\n  footer > div {\r\n    width: 90%;\r\n  }\r\n  .after {\r\n    bottom: -50px;\r\n  }\r\n  div.start {\r\n    text-align: center;\r\n    height: 150px;\r\n    width: 190px;\r\n  }\r\n  footer {\r\n    height: fit-content;\r\n    margin-bottom: 50px;\r\n  }\r\n  footer > div:not(.after) {\r\n    margin: 15px 0;\r\n  }\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/css/footer.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,kBAAkB;EAClB,SAAS;EACT,WAAW;EACX,eAAe;AACjB;AACA;EACE,YAAY;EACZ,eAAe;AACjB;AACA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,8BAA8B;EAC9B,eAAe;EACf,4BAA4B;EAC5B,YAAY;EACZ,YAAY;EACZ,sBAAsB;EACtB,eAAe;EACf,gBAAgB;EAChB,kBAAkB;AACpB;AACA;EACE,YAAY;EACZ,gBAAgB;AAClB;AACA;EACE,2CAA2C;EAC3C,0CAA0C;EAC1C,yBAAyB;EACzB,YAAY;EACZ,YAAY;AACd;AACA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,OAAO;EACP,WAAW;EACX,iBAAiB;EACjB,YAAY;EACZ,iBAAiB;EACjB,YAAY;EACZ,YAAY;EACZ,+CAA+C;AACjD;AACA;EACE,kBAAkB;EAClB,UAAU;EACV,UAAU;EACV,mBAAmB;AACrB;AACA;EACE,WAAW;EACX,kBAAkB;EAClB,WAAW;EACX,WAAW;EACX,0CAA0C;EAC1C,aAAa;AACf;AACA;;;;;;;;;;GAUG;AACH;EACE;IACE,UAAU;EACZ;EACA;IACE,YAAY;EACd;EACA;IACE,iBAAiB;EACnB;EACA;IACE,mBAAmB;IACnB,6BAA6B;EAC/B;EACA;IACE,gBAAgB;EAClB;EACA;IACE,YAAY;EACd;AACF;AACA;EACE;IACE,UAAU;EACZ;EACA;IACE,aAAa;EACf;EACA;IACE,kBAAkB;IAClB,aAAa;IACb,YAAY;EACd;EACA;IACE,mBAAmB;IACnB,mBAAmB;EACrB;EACA;IACE,cAAc;EAChB;AACF","sourcesContent":["footer {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  flex-wrap: wrap;\r\n}\r\nfooter div {\r\n  height: 100%;\r\n  cursor: pointer;\r\n}\r\ndiv.start {\r\n  font-weight: 500;\r\n  font-size: xx-large;\r\n}\r\ndiv.center {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  height: 70px;\r\n  width: 190px;\r\n  align-self: flex-start;\r\n  margin-top: 8px;\r\n  font-weight: 600;\r\n  font-size: 0.83rem;\r\n}\r\ndiv.end {\r\n  width: 200px;\r\n  font-weight: 700;\r\n}\r\ndiv.end > div > input:first-of-type {\r\n  outline: 2px solid var(--color-bg, #f8f3ec);\r\n  border: 2px solid var(--color-bg, #f8f3ec);\r\n  border-right: transparent;\r\n  width: 150px;\r\n  height: 100%;\r\n}\r\ndiv.end > div:last-child {\r\n  margin-top: 10px;\r\n  width: fit-content;\r\n  height: 30px;\r\n}\r\ndiv.end > div > button {\r\n  position: relative;\r\n  top: 1%;\r\n  right: 39px;\r\n  font-weight: bold;\r\n  border: none;\r\n  padding: 0px 10px;\r\n  height: 100%;\r\n  color: white;\r\n  background-color: var(--color-primary, #059669);\r\n}\r\n.after {\r\n  position: absolute;\r\n  left: 50px;\r\n  width: 90%;\r\n  height: fit-content;\r\n}\r\n.after::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 5px;\r\n  background-color: var(--color-bg, #f8f3ec);\r\n  bottom: -15px;\r\n}\r\n/* footer {\r\n  display: flex;\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  height: 25vh;\r\n} */\r\n@media only screen and (max-width: 3000px) {\r\n  footer > div {\r\n    width: 10%;\r\n  }\r\n  .after {\r\n    bottom: 40px;\r\n  }\r\n  div.start {\r\n    text-align: start;\r\n  }\r\n  footer {\r\n    align-items: center;\r\n    justify-content: space-around;\r\n  }\r\n  div.end > div:last-child {\r\n    margin-top: 10px;\r\n  }\r\n  footer {\r\n    height: 25vh;\r\n  }\r\n}\r\n@media only screen and (max-width: 600px) {\r\n  footer > div {\r\n    width: 90%;\r\n  }\r\n  .after {\r\n    bottom: -50px;\r\n  }\r\n  div.start {\r\n    text-align: center;\r\n    height: 150px;\r\n    width: 190px;\r\n  }\r\n  footer {\r\n    height: fit-content;\r\n    margin-bottom: 50px;\r\n  }\r\n  footer > div:not(.after) {\r\n    margin: 15px 0;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31128,7 +31369,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/history/index.js");
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/index.js");
-// @ts-nocheck
 /**
  * React Router DOM v6.3.0
  *
@@ -36508,6 +36748,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/index.css */ "./src/css/index.css");
 /* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/footer */ "./src/components/footer.js");
 /* harmony import */ var _components_editor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/editor */ "./src/components/editor.js");
+/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./main */ "./src/main.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 // @ts-nocheck
 
 
@@ -36515,8 +36757,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.querySelector("#root"));
-root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Main, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_main__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)), " "));
 })();
 
 /******/ })()
