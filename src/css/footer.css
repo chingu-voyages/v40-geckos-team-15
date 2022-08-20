@@ -51,6 +51,7 @@ div.end > div > button {
   height: 100%;
   color: white;
   background-color: var(--color-primary, #059669);
+  cursor: pointer;
 }
 .after {
   position: absolute;
