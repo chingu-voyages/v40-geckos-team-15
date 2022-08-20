@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
 
 *,
 ::after,
@@ -6,13 +6,15 @@
   box-sizing: border-box;
   margin: 0;
 }
-
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
-
-
 ::root {
   --color-primary: #059669;
-  --color-bg: #F8F3EC;
+  --color-bg: #f8f3ec;
+}
+a {
+  text-decoration: none;
+  color: initial;
 }
