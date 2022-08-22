@@ -5,6 +5,11 @@
 ::before {
   box-sizing: border-box;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
 }
 
 html {
