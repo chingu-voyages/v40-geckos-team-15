@@ -55,6 +55,7 @@ button:hover {
 .nav-link:hover {
   color: #059669;
 }
+
 .nav-burger {
   position: fixed;
   right: 20px;
@@ -70,6 +71,7 @@ button:hover {
   top: 0;
 }
 
+
 .is-active {
   display: none;
 }
@@ -79,6 +81,10 @@ button:hover {
     height: 100vh;
     padding-top: 40px;
   }
+  .nav-button {
+    background-color: #e6fcf5;
+    color: #000;
+  }
 }
 
 /* Hide nav links on screens with width below 768px  */
@@ -86,6 +92,9 @@ button:hover {
   .header {
     display: flex;
     justify-content: space-between;
+  }
+  .brand {
+    flex-grow: 3;
   }
   .nav-burger {
     display: none;
@@ -97,8 +106,14 @@ button:hover {
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 1.1rem;
     background-color: #fff;
+    flex-grow: 3;
+  }
+
+  .nav-button {
+    display: block;
   }
   .nav-link {
     display: inline-block;

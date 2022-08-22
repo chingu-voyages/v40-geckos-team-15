@@ -22,13 +22,16 @@ function Header(){
         </div>
       </div>
       <nav className={ !isActive ? "nav is-active" : "nav" } id="nav">
-        <a href="/" className="nav-link">Home</a>
-        <a href="/about" className="nav-link">About Us</a>
-        <a href="/contact" className="nav-link">Contact Us</a>
+        <div>
+          <a href="/" className="nav-link">Home</a>
+          <a href="/about" className="nav-link">About Us</a>
+          <a href="/contact" className="nav-link">Contact Us</a>
+        </div>
+        <div style={{padding: "20px 5px"}}>
+          <button  className={ !isActive ? "nav-button is-active" : "nav-button" }>Sign Up</button>
+        </div>
       </nav>
-      <div style={{padding: "20px 5px"}}>
-        <button>Sign Up</button>
-      </div>
+
     </header>
   )
 }
