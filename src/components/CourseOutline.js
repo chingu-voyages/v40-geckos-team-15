@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import "../css/courseoutline.css";
 
 function CourseOutline(props) {
   const [num, setnum] = useState(1);
@@ -24,7 +25,7 @@ function CourseOutline(props) {
             }}
             key={lesson.id}
             >
-              <Link to={`${lesson.url}`}>{ lesson.title }</Link>
+              <Link to={lesson.url}>{ lesson.title }</Link>
             </li>          
           ))
         }
