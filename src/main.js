@@ -12,11 +12,7 @@ export default function Main(props) {
   return (
     <>
       <Header />
-
       <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
         <li>
           <Link to="/html">HTML</Link>
           <ul>
