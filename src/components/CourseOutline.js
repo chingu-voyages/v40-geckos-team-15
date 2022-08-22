@@ -14,7 +14,7 @@ function CourseOutline(props){
             <li style={{
               margin: "20px", color: "#2a8a6d", padding: "10px 10px 20px 10px", borderBottom: "#d1d1d1 2px solid"
             }}>
-              { lesson.title }
+              <a href={`${props.course}${lesson.url}`}>{ lesson.title }</a>
             </li>          
           ))
         }

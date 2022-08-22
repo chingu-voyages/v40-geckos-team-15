@@ -6,10 +6,10 @@ import CourseCard from "../components/CourseCard";
 function Course() {
   let { course } = useParams();
   const lessons = [
-    {title: "What is HTML", url: "/html/lesson-1"},
-    {title: "HTML Tags Explained", url: "html/lesson-1"},
-    {title: "HTML Tags Explained", url: "html/lesson-1"},
-    {title: "HTML Tags Explained", url: "html/lesson-1"}
+    {title: "What is HTML", url: "/lesson-1"},
+    {title: "HTML Tags Explained", url: "/lesson-1"},
+    {title: "HTML Tags Explained", url: "/lesson-1"},
+    {title: "HTML Tags Explained", url: "/lesson-1"}
   ];
   const courses = [
     {name: "Javascript", description: "Allow users interact with your website", longdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tempor, egestas malesuada etiam molestie lacus, amet, ac. Commodo ac, aenean vitae volutpat aliquam porttitor euismod. Molestie enim habitant dui integer amet, orci, scelerisque id. Pellentesque diam dolor duis ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
@@ -42,7 +42,7 @@ function Course() {
       </div>
       <div style={{display: "flex", padding:"30px 40px"}}>
         <div style={{flexGrow: "10"}}>
-          <CourseOutline lessons={lessons} />
+          <CourseOutline lessons={lessons} course={course} />
         </div>
         <div style={{ padding: "20px"}}>
           {
