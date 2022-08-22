@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 function CourseOutline(props) {
-  const [num, setnum] = useState(1);
   return (
     <>
       <h2>Course Outline</h2>
