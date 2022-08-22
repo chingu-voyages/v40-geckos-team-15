@@ -52,8 +52,7 @@ function Course() {
           }
         </div>
       </div>
-
     </>
-  )
+  );
 }
 export default Course;
