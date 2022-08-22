@@ -4,3 +4,28 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+h3 {
+  font-size: 1.7em;
+
+}
+
+/* Course Cards */
+.card {
+  background-color: #f8f9f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+.card-text {
+  padding: 20px 0;
+}
