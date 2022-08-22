@@ -1,6 +1,7 @@
 //@ts-nocheck
 import React from "react";
 import { Routes, Route, Link } from 'react-router-dom';
+import Header from "./components/Header";
 import Home from "./pages/Home"; 
 import Course from "./pages/Course"; 
 import Lesson from "./pages/Lesson"; 
@@ -40,6 +41,7 @@ export default function Main(props) {
           <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
+      <Header />
       <Routes>
         <Route exact path="/" element={ <Home /> } />
         <Route path="/:course" element={ <Course /> } />
