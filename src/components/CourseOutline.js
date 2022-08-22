@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function CourseOutline(props){
   return (
@@ -14,7 +15,7 @@ function CourseOutline(props){
             <li style={{
               margin: "20px", color: "#2a8a6d", padding: "10px 10px 20px 10px", borderBottom: "#d1d1d1 2px solid"
             }}>
-              <a href={`${props.course}${lesson.url}`}>{ lesson.title }</a>
+              <Link to={`${lesson.url}`}>{ lesson.title }</Link>
             </li>          
           ))
         }
