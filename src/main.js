@@ -11,6 +11,8 @@ import Contact from "./pages/Contact";
 export default function Main(props) {
   return (
     <>
+      <Header />
+      
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -41,7 +43,6 @@ export default function Main(props) {
           <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
-      <Header />
       <Routes>
         <Route exact path="/" element={ <Home /> } />
         <Route path="/:course" element={ <Course /> } />
