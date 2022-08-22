@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import "../css/courseoutline.css";
 
 function CourseOutline(props) {
-  const [num, setnum] = useState(1);
   return (
     <>
       <h2>Course Outline</h2>
