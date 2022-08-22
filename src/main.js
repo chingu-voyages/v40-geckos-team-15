@@ -12,7 +12,7 @@ export default function Main(props) {
   return (
     <>
       <Header />
-      
+
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -35,12 +35,6 @@ export default function Main(props) {
         </li>
         <li>
           <Link to="/javascript">Javascript</Link>
-        </li>
-        <li>
-          <Link to="/about">About Us</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
       <Routes>
