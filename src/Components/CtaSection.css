@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.Cta-head {
+    font-size: 30px;
+    font-family: 'poppins';
+    color: #059669;
+    padding-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #059669;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+}
+
+.cta-p {
+    font-family: 'poppins';
+    font-size: 13px;
+    padding-bottom: 20px;
+}

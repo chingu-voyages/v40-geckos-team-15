@@ -3,6 +3,7 @@ import React from 'react'
 import Browsecourse from './Components/Browsecourse'
 import HeroHeader from './Components/HeroHeader'
 import WhyLearn from './Components/WhyLearn'
+import CtaSection from './Components/CtaSection'
 
 
 function main() {
@@ -14,6 +15,7 @@ function main() {
         
         <Browsecourse/>
         <WhyLearn/>
+        <CtaSection/>
        
     </div>
   )
