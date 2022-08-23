@@ -1,9 +1,22 @@
 //@ts-nocheck
-import React from "react";
-export default function Main(props) {
+import React from 'react'
+import Browsecourse from './Components/Browsecourse'
+import HeroHeader from './Components/HeroHeader'
+import WhyLearn from './Components/WhyLearn'
+
+
+function main() {
   return (
     <div>
-      <p>Test</p>
+
+       <HeroHeader/>
+       
+        
+        <Browsecourse/>
+        <WhyLearn/>
+       
     </div>
-  );
+  )
 }
+
+export default main
