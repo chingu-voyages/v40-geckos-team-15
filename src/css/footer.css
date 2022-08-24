@@ -1,0 +1,121 @@
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+footer div {
+  height: 100%;
+  cursor: pointer;
+}
+div.start {
+  font-weight: 500;
+  font-size: xx-large;
+}
+div.center {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 70px;
+  width: 180px;
+  align-self: flex-start;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 0.83rem;
+}
+div.end {
+  width: 200px;
+  font-weight: 700;
+}
+div.end > div > input:first-of-type {
+  outline: 2px solid var(--color-bg, #f8f3ec);
+  border: 2px solid var(--color-bg, #f8f3ec);
+  border-right: transparent;
+  width: 150px;
+  height: 100%;
+}
+div.end > div:last-child {
+  margin-top: 10px;
+  width: fit-content;
+  height: 30px;
+}
+div.end > div > button {
+  position: relative;
+  top: 1%;
+  right: 39px;
+  font-weight: bold;
+  border: none;
+  padding: 0px 10px;
+  height: 100%;
+  color: white;
+  background-color: var(--color-primary, #059669);
+  cursor: pointer;
+}
+.after {
+  position: absolute;
+  left: 50px;
+  width: 90%;
+  height: fit-content;
+}
+.after::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-bg, #f8f3ec);
+  bottom: -15px;
+}
+/* footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  height: 25vh;
+} */
+@media only screen and (max-width: 3000px) {
+  footer > div {
+    width: 10%;
+  }
+  .after {
+    bottom: 40px;
+  }
+  div.start {
+    text-align: start;
+  }
+  footer {
+    align-items: center;
+    justify-content: space-around;
+  }
+  div.end > div:last-child {
+    margin-top: 10px;
+  }
+  footer {
+    height: 25vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer > div {
+    width: 90%;
+  }
+  .after {
+    bottom: -50px;
+  }
+  div.start {
+    text-align: center;
+    height: 50px;
+    width: 190px;
+  }
+  footer {
+    height: fit-content;
+    margin-bottom: 50px;
+  }
+  footer > div:not(.after) {
+    margin: 15px 0;
+  }
+}
