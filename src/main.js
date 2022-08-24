@@ -1,19 +1,18 @@
 //@ts-nocheck
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Course from "./pages/Course";
-import Lesson from "./pages/Lesson";
-import About from "./pages/About";
+import { Routes, Route, Link } from 'react-router-dom';
+import Header from "./components/Header";
+import Home from "./pages/Home"; 
+import Course from "./pages/Course"; 
+import Lesson from "./pages/Lesson"; 
+import About from "./pages/About"; 
 import Contact from "./pages/Contact";
 
 export default function Main(props) {
   return (
     <>
+      <Header />
       <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
         <li>
           <Link to="/html">HTML</Link>
           <ul>
@@ -32,12 +31,6 @@ export default function Main(props) {
         </li>
         <li>
           <Link to="/javascript">Javascript</Link>
-        </li>
-        <li>
-          <Link to="/about">About Us</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
       <Routes>
