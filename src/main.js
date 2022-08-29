@@ -1,4 +1,9 @@
-//@ts-nocheck
+
+import React from 'react'
+import Browsecourse from './Components/Browsecourse'
+import HeroHeader from './Components/HeroHeader'
+import WhyLearn from './Components/WhyLearn'
+import CtaSection from './Components/CtaSection'
 import React from "react";
 import { Routes, Route, Link } from 'react-router-dom';
 import Header from "./components/Header";
@@ -12,6 +17,10 @@ export default function Main(props) {
   return (
     <>
       <Header />
+      <HeroHeader/>
+       <Browsecourse/>
+       <WhyLearn/>
+       <CtaSection/>
       <ul>
         <li>
           <Link to="/html">HTML</Link>
@@ -42,4 +51,6 @@ export default function Main(props) {
       </Routes>
     </>
   );
+
 }
+

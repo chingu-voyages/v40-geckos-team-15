@@ -1,0 +1,20 @@
+.wrapper-grid-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 16rem);
+    justify-content: center;
+}
+
+.card2 {
+    text-align: center;
+    color: #047857;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.img2 {
+    width: 40%;
+}
+
+.d-text2 {
+    font-size: 15px;
+}
