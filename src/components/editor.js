@@ -10,8 +10,6 @@ export default function Editor() {
     let div = document.querySelector(".editor > div:last-child");
     div.innerHTML = document.querySelector(".text").textContent;
     div.style.display = "block";
-    /*  div.innerHTML =
-      '<html lang="en"><head><meta charset="UTF-8" />   <meta http-equiv="X-UA-Compatible" content="IE=edge" />      <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Document</title></head><body></body></html>'; */
   };
   const handleclick = () => {
     let text = document.querySelector(".text");
