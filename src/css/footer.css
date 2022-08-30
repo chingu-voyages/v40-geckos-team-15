@@ -60,8 +60,7 @@ div.end > div > button {
   cursor: pointer;
 }
 .after {
-  position: absolute;
-  left: 50px;
+  position: relative;
   width: 90%;
   height: fit-content;
 }
@@ -89,7 +88,8 @@ div.end > div > button {
     width: 10%;
   }
   .after {
-    bottom: 40px;
+    bottom: 70px;
+    left: 50px;
   }
   div.start {
     text-align: start;
@@ -105,13 +105,14 @@ div.end > div > button {
     height: 25vh;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 787px) {
   footer > div {
     width: 90%;
     height: fit-content;
   }
   .after {
-    bottom: -25%;
+    bottom: -10%;
+    left: initial;
   }
   div.start {
     text-align: center;
@@ -120,8 +121,9 @@ div.end > div > button {
   }
   footer {
     height: 350px;
-    bottom: -60%;
+    bottom: -35%;
     align-content: space-between;
+    width: 350px;
   }
   footer > div:not(.after) {
     margin: 15px 0;
