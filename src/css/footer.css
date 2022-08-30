@@ -2,8 +2,14 @@ footer {
   display: flex;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   flex-wrap: wrap;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 footer div {
   height: 100%;
@@ -102,9 +108,10 @@ div.end > div > button {
 @media only screen and (max-width: 600px) {
   footer > div {
     width: 90%;
+    height: fit-content;
   }
   .after {
-    bottom: -50px;
+    bottom: -25%;
   }
   div.start {
     text-align: center;
@@ -112,8 +119,9 @@ div.end > div > button {
     width: 190px;
   }
   footer {
-    height: fit-content;
-    margin-bottom: 50px;
+    height: 350px;
+    bottom: -60%;
+    align-content: space-between;
   }
   footer > div:not(.after) {
     margin: 15px 0;
