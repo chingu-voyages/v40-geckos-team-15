@@ -1,6 +1,6 @@
 import React from 'react'
-import './WhyLearn.css'
-import './Browsecourse.css'
+import '../css/WhyLearn.css'
+import '../css/Browsecourse.css'
 import WhyLearnCardData from './WhyLearnCardData'
 import WhyLearnCard from './WhyLearnCard'
 

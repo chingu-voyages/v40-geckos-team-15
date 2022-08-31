@@ -1,5 +1,5 @@
 import React from 'react';
-import './Browsecourse.css'
+import '../css/Browsecourse.css';
 import CourseCard from './CourseCard';
 import CourseCardData from './CourseCardData';
 

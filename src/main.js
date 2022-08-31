@@ -1,10 +1,8 @@
-
 import React from 'react'
 import Browsecourse from './Components/Browsecourse'
 import HeroHeader from './Components/HeroHeader'
 import WhyLearn from './Components/WhyLearn'
 import CtaSection from './Components/CtaSection'
-import React from "react";
 import { Routes, Route, Link } from 'react-router-dom';
 import Header from "./components/Header";
 import Home from "./pages/Home"; 
