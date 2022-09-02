@@ -1,6 +1,6 @@
 import React from 'react'
-import './CourseCard.css'
-import "./WhyLearn.css"
+import '../css/CourseCard.css'
+import "../css/WhyLearn.css"
 
 function WhyLearnCard(props) {
 

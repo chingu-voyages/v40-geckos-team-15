@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CtaSection.css"
+import "../css/CtaSection.css"
 
 function CtaSection() {
   return (
