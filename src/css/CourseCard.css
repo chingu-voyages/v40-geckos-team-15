@@ -8,21 +8,18 @@
     margin: 20px;
     padding: 10px;
     justify-content: space-between;
-    
-
 }
 
 .card-img {
-   width: 100%;
+    width: 100%;
 }
 
 .text-arr {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 0;
-    font-family: "poppins"
+    font-family: "poppins";
 }
 
 .descript-text {

@@ -12,9 +12,24 @@ function Course() {
     {title: "HTML Tags Explained", id: 4 , url: "/html/lesson-4"}
   ];
   const courses = [
-    {name: "Javascript", description: "Allow users interact with your website", longdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tempor, egestas malesuada etiam molestie lacus, amet, ac. Commodo ac, aenean vitae volutpat aliquam porttitor euismod. Molestie enim habitant dui integer amet, orci, scelerisque id. Pellentesque diam dolor duis ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
-    {name: "CSS", description: "Make your website beautiful with styles", longdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tempor, egestas malesuada etiam molestie lacus, amet, ac. Commodo ac, aenean vitae volutpat aliquam porttitor euismod. Molestie enim habitant dui integer amet, orci, scelerisque id. Pellentesque diam dolor duis ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
-    {name: "HTML", description: "Learn how websites are structured with HTML elements and structure", longdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tempor, egestas malesuada etiam molestie lacus, amet, ac. Commodo ac, aenean vitae volutpat aliquam porttitor euismod. Molestie enim habitant dui integer amet, orci, scelerisque id. Pellentesque diam dolor duis ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+    {
+      name: "Javascript",
+      description: "Allow users interact with your website",
+      img: "https://via.placeholder.com/350x200.png",
+      longdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tempor, egestas malesuada etiam molestie lacus, amet, ac. Commodo ac, aenean vitae volutpat aliquam porttitor euismod. Molestie enim habitant dui integer amet, orci, scelerisque id. Pellentesque diam dolor duis ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      name: "CSS",
+      description: "Make your website beautiful with styles",
+      img: "https://via.placeholder.com/350x200.png",
+      longdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tempor, egestas malesuada etiam molestie lacus, amet, ac. Commodo ac, aenean vitae volutpat aliquam porttitor euismod. Molestie enim habitant dui integer amet, orci, scelerisque id. Pellentesque diam dolor duis ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      name: "HTML",
+      description: "Learn how websites are structured with HTML elements and structure",
+      img: "https://via.placeholder.com/350x200.png",
+      longdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tempor, egestas malesuada etiam molestie lacus, amet, ac. Commodo ac, aenean vitae volutpat aliquam porttitor euismod. Molestie enim habitant dui integer amet, orci, scelerisque id. Pellentesque diam dolor duis ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
   ]
   return(
     <>
@@ -46,8 +61,8 @@ function Course() {
         </div>
         <div style={{ padding: "20px"}}>
           {
-            courses.map( course => (
-              <CourseCard course = {course}/>
+            courses.map( (course, index) => (
+              <CourseCard key={index} course = {course}/>
             ))
           }
         </div>
