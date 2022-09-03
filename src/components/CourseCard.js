@@ -1,8 +1,9 @@
-import React from "react";
-import "../css/courseoutline.css";
+import React from 'react'
+import '../css/CourseCard.css'
 
 function CourseCard(props) {
-  console.log(props.course.img)
+
+    
   return (
     <div className="card-container" >
       <img className="card-img" src={props.course.img} />
@@ -15,4 +16,5 @@ function CourseCard(props) {
     </div>
   )
 }
-export default CourseCard;
+
+export default CourseCard
