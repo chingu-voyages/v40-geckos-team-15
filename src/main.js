@@ -4,7 +4,7 @@ import React from 'react'
 // import WhyLearn from './Components/WhyLearn'
 // import CtaSection from './Components/CtaSection'
 import { Routes, Route, Link } from 'react-router-dom';
-import Header from "./Components/Header";
+import Header from "./components/Header";
 import Home from "./pages/Home"; 
 import Course from "./pages/Course"; 
 import Lesson from "./pages/Lesson"; 
