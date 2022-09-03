@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import CourseOutline from "../Components/CourseOutline";
-import CourseCard from "../Components/CourseCard";
+import CourseCard from "../Components/CourseCard-1";
 
 function Course() {
   let { course } = useParams();
