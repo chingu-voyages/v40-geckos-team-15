@@ -1,8 +1,4 @@
 import React from 'react'
-// import Browsecourse from './Components/Browsecourse'
-// import HeroHeader from './Components/HeroHeader'
-// import WhyLearn from './Components/WhyLearn'
-// import CtaSection from './Components/CtaSection'
 import { Routes, Route, Link } from 'react-router-dom';
 import Header from "./components/Header";
 import Home from "./pages/Home"; 
@@ -15,12 +11,6 @@ export default function Main(props) {
   return (
     <>
       <Header />
-      {/*
-      <HeroHeader/>
-       <Browsecourse/>
-       <WhyLearn/>
-       <CtaSection/>
-     */}
       <ul>
         <li>
           <Link to="/html">HTML</Link>
