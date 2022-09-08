@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 22rem);
+    justify-content: center;
+  }
+
+  .course-section {
+    width: 85%;
+    margin: 10px auto;
+  }
+
+  .Top-text {
+    color: #047857;
+    font-family: 'poppins';
+    font-weight: 500;
+  }
+
+  .h5-text  {
+     font-size: 25px;
+     font-family: "poppins";
+  }

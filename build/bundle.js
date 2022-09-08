@@ -2,10 +2,17 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+<<<<<<< HEAD
+/***/ "./src/Components/Browsecourse.js":
+/*!****************************************!*\
+  !*** ./src/Components/Browsecourse.js ***!
+  \****************************************/
+=======
 /***/ "./src/components/CourseOutline.js":
 /*!*****************************************!*\
   !*** ./src/components/CourseOutline.js ***!
   \*****************************************/
+>>>>>>> origin/development
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -16,6 +23,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 
+<<<<<<< HEAD
+function Browsecourse() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Browsecourse);
+
+/***/ }),
+
+/***/ "./src/Components/HeroHeader.js":
+/*!**************************************!*\
+  !*** ./src/Components/HeroHeader.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _HeroHeader_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeroHeader.css */ "./src/Components/HeroHeader.css");
+
+
+
+function HeroHeader() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "Hero-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "Hero-box1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "hero-h1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "hero-span"
+  }, "Master"), " the Fundamentals of ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "hero-span"
+  }, "Front-End"), " Development")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "Hero-box2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "hero-img",
+    src: "/images/img1.png"
+  })));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeroHeader);
+=======
 function CourseOutline(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Course Outline"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     style: {
@@ -127,6 +180,7 @@ function Footer() {
     className: "after"
   }, "Gecko 2022 Gecko Learn All Rights Reserved"));
 }
+>>>>>>> origin/development
 
 /***/ }),
 
@@ -138,10 +192,14 @@ function Footer() {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Main)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+<<<<<<< HEAD
+/* harmony import */ var _Components_Browsecourse__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/Browsecourse */ "./src/Components/Browsecourse.js");
+/* harmony import */ var _Components_HeroHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/HeroHeader */ "./src/Components/HeroHeader.js");
+=======
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/Home */ "./src/pages/Home.js");
@@ -149,11 +207,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_Lesson__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Lesson */ "./src/pages/Lesson.js");
 /* harmony import */ var _pages_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/About */ "./src/pages/About.js");
 /* harmony import */ var _pages_Contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Contact */ "./src/pages/Contact.js");
+>>>>>>> origin/development
 //@ts-nocheck
 
 
 
 
+<<<<<<< HEAD
+function main() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Components_HeroHeader__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Components_Browsecourse__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+=======
 
 
 
@@ -193,7 +256,37 @@ function Main(props) {
     path: "/contact",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Contact__WEBPACK_IMPORTED_MODULE_5__["default"], null)
   })));
+>>>>>>> origin/development
 }
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/Components/HeroHeader.css":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/Components/HeroHeader.css ***!
+  \*****************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n    background:#F8F3EC;\r\n}\r\n\r\n.hero-img {\r\n    width: 100%;\r\n}\r\n\r\n.hero-h1 {\r\n    font-family: 'poppins';\r\n    line-height: 70px;\r\n    font-size: 45px;\r\n    font-weight: 600;\r\n}\r\n\r\n.hero-box1 {\r\n    width: 50%;\r\n}\r\n\r\n.hero-box2 {\r\n    width: 50%;\r\n}\r\n\r\n\r\n.Hero-container {\r\n    display: flex;\r\n    width: 80%;\r\n    align-items: center;\r\n    margin: auto;\r\n    margin-top: 30px;\r\n\r\n}\r\n\r\n\r\n.hero-span {\r\n    color: #059669;\r\n}", "",{"version":3,"sources":["webpack://./src/Components/HeroHeader.css"],"names":[],"mappings":"AAGA;IACI,kBAAkB;AACtB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,sBAAsB;IACtB,iBAAiB;IACjB,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,UAAU;AACd;;AAEA;IACI,UAAU;AACd;;;AAGA;IACI,aAAa;IACb,UAAU;IACV,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;;AAEpB;;;AAGA;IACI,cAAc;AAClB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');\r\n\r\n\r\nbody {\r\n    background:#F8F3EC;\r\n}\r\n\r\n.hero-img {\r\n    width: 100%;\r\n}\r\n\r\n.hero-h1 {\r\n    font-family: 'poppins';\r\n    line-height: 70px;\r\n    font-size: 45px;\r\n    font-weight: 600;\r\n}\r\n\r\n.hero-box1 {\r\n    width: 50%;\r\n}\r\n\r\n.hero-box2 {\r\n    width: 50%;\r\n}\r\n\r\n\r\n.Hero-container {\r\n    display: flex;\r\n    width: 80%;\r\n    align-items: center;\r\n    margin: auto;\r\n    margin-top: 30px;\r\n\r\n}\r\n\r\n\r\n.hero-span {\r\n    color: #059669;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
 
@@ -36155,10 +36248,17 @@ if (false) {} else {
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "./src/Components/HeroHeader.css":
+/*!***************************************!*\
+  !*** ./src/Components/HeroHeader.css ***!
+  \***************************************/
+=======
 /***/ "./src/css/editor.css":
 /*!****************************!*\
   !*** ./src/css/editor.css ***!
   \****************************/
+>>>>>>> origin/development
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -36177,7 +36277,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+<<<<<<< HEAD
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_HeroHeader_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./HeroHeader.css */ "./node_modules/css-loader/dist/cjs.js!./src/Components/HeroHeader.css");
+=======
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_editor_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./editor.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/editor.css");
+>>>>>>> origin/development
 
       
       
@@ -36199,11 +36303,18 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
+<<<<<<< HEAD
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_HeroHeader_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+=======
 var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_editor_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+>>>>>>> origin/development
 
 
 
 
+<<<<<<< HEAD
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_HeroHeader_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_HeroHeader_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_HeroHeader_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+=======
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_editor_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_editor_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_editor_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
@@ -36259,6 +36370,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_footer_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_footer_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_footer_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+>>>>>>> origin/development
 
 
 /***/ }),

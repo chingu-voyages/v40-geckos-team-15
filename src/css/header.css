@@ -1,0 +1,122 @@
+h1, .h1 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+button {
+  color: #fff;
+  background-color: #059669;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #12b886;
+}
+/* Header and navbar styling */
+.header {
+  padding:0px 1rem;
+}
+/* Logo Section       */
+.brand {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.brand-logo {
+  text-decoration: none;
+  color: #059669;
+}
+.brand span {
+  font-size: 1.7em;
+}
+/* End of Logo Section     */
+/*    Nav links        */
+.nav {
+  background-color: #059669;
+  padding: 10px 30px;
+}
+.nav-link {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.nav-link:hover {
+  color: #059669;
+}
+
+.nav-burger {
+  position: fixed;
+  right: 20px;
+}
+.nav-cancel{
+  position: fixed;
+  right: 160px;
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+
+.is-active {
+  display: none;
+}
+
+@media (max-width: 767px) {
+ .nav {
+    height: 100vh;
+    padding-top: 40px;
+  }
+  .nav-button {
+    background-color: #e6fcf5;
+    color: #000;
+  }
+}
+
+/* Hide nav links on screens with width below 768px  */
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .brand {
+    flex-grow: 3;
+  }
+  .nav-burger {
+    display: none;
+  }
+  /*  Desktop  Nav links        */
+  .nav {
+    display: block;
+    position: static;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    background-color: #fff;
+    flex-grow: 3;
+  }
+
+  .nav-button {
+    display: block;
+  }
+  .nav-link {
+    display: inline-block;
+    padding: 20px 15px;
+    color: #212529;
+  }
+  /*   End of Nav links        */
+}
+/* End of header and navbar styling */
+
