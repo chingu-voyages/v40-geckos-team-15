@@ -11,7 +11,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Main />
+      <Editor />
       <Footer />
-    </BrowserRouter>{" "}
+    </BrowserRouter>
   </React.StrictMode>
 );

@@ -2,8 +2,14 @@ footer {
   display: flex;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   flex-wrap: wrap;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 footer div {
   height: 100%;
@@ -54,8 +60,7 @@ div.end > div > button {
   cursor: pointer;
 }
 .after {
-  position: absolute;
-  left: 50px;
+  position: relative;
   width: 90%;
   height: fit-content;
 }
@@ -83,7 +88,8 @@ div.end > div > button {
     width: 10%;
   }
   .after {
-    bottom: 40px;
+    bottom: 70px;
+    left: 50px;
   }
   div.start {
     text-align: start;
@@ -99,12 +105,14 @@ div.end > div > button {
     height: 25vh;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 787px) {
   footer > div {
     width: 90%;
+    height: fit-content;
   }
   .after {
-    bottom: -50px;
+    bottom: -10%;
+    left: initial;
   }
   div.start {
     text-align: center;
@@ -112,8 +120,10 @@ div.end > div > button {
     width: 190px;
   }
   footer {
-    height: fit-content;
-    margin-bottom: 50px;
+    height: 350px;
+    bottom: -35%;
+    align-content: space-between;
+    width: 350px;
   }
   footer > div:not(.after) {
     margin: 15px 0;

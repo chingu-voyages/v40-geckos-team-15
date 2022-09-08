@@ -1,30 +1,28 @@
 .editor {
   padding: 10px;
-  width: 500px;
-  height: 500px;
+  height: 300px;
   position: absolute;
-  top: 25%;
   left: 50%;
-  transform: translate(-50%, -25%);
-  -webkit-transform: translate(-50%, -25%);
-  -moz-transform: translate(-50%, -25%);
-  -ms-transform: translate(-50%, -25%);
-  -o-transform: translate(-50%, -25%);
   background-color: rgb(46, 46, 46);
   border-radius: 9px;
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
   -ms-border-radius: 9px;
   -o-border-radius: 9px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 .editor::after {
   position: absolute;
   content: "";
   width: 95%;
   height: 5px;
-  bottom: 8%;
-  left: 2%;
-  z-index: -1;
+  bottom: 15%;
+  left: 2.1%;
+  z-index: 1;
   background-color: gray;
   border-radius: 9px;
   -webkit-border-radius: 9px;
@@ -34,7 +32,7 @@
 }
 .editor .text {
   width: 100%;
-  height: 90%;
+  height: 80%;
   background-color: rgb(46, 46, 46);
   outline: none;
   border: none;
@@ -47,14 +45,15 @@
 }
 .editor > div:last-child {
   position: relative;
-  bottom: -8.8%;
+  bottom: -25%;
   width: 100%;
   height: 150px;
   display: none;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px #ccc;
+  border: 1px solid #ccc;
 }
 .editor button {
-  padding: 2px 40px;
+  padding: 2px minmax(20px, 40px);
   border-radius: 9px;
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
@@ -64,9 +63,27 @@
   background-color: inherit;
   border: 2px solid gray;
   cursor: pointer;
-  position: relative;
-  left: 75%;
-  bottom: -5%;
+  position: absolute;
+  right: 15px;
+  bottom: 5%;
   text-transform: capitalize;
   font-weight: bold;
+}
+@media only screen and (max-width: 3000px) {
+  .editor {
+    top: 25%;
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .editor {
+    top: 25%;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 787px) {
+  .editor {
+    top: 60%;
+    width: 300px;
+  }
 }
