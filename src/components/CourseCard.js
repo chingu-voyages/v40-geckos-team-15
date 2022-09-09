@@ -1,17 +1,12 @@
-import React from 'react'
-import '../css/CourseCard.css'
+import React from "react";
 
-function CourseCard(props) {
-
-    
+function CourseCard(props){
   return (
-    <div className="card-container" >
-      <img className="card-img" src={props.course.img} />
-      <div className="text-arr">
+    <div className="card" >
+      <img src="https://via.placeholder.com/350x200.png" />
+      <div className="card-text">
         <h3>{props.course.name}</h3>
-        <p className="descript-text">
-          <img src="images/vector.png" /> {props.course.description}
-        </p>
+        <p>{props.course.description}</p>
       </div>
     </div>
   )
