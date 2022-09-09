@@ -34,7 +34,7 @@ function Home() {
       <div style={{ padding:"30px 40px" }}>
         <p>home</p>
         
-        <div style={{ display: "flex", padding: "20px" }}>
+        <div style={{ display: "flex", padding: "20px", flexWrap: "wrap" }}>
           {
             courses.map( (course) => (
               <CourseCard key={course.id} course = {course}/>

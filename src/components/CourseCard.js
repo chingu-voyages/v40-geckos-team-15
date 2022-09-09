@@ -2,7 +2,7 @@ import React from "react";
 
 function CourseCard(props){
   return (
-    <div className="card" >
+    <div className="card-container" >
       <img src="https://via.placeholder.com/350x200.png" />
       <div className="card-text">
         <h3>{props.course.name}</h3>
