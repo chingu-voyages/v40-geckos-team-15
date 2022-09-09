@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/footer";
 
+
 export default function Main(props) {
   return (
     <>
@@ -51,6 +52,7 @@ export default function Main(props) {
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+
     </>
   );
 
