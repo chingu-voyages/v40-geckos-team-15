@@ -9,6 +9,8 @@
     background:#F8F3EC;
     justify-content: space-around;
     padding: 40px;
+    border-radius: 1rem;
+    margin: 1rem auto;
     
 }
 .hero-img {

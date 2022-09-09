@@ -16,5 +16,4 @@ function CourseCard(props) {
     </div>
   )
 }
-
-export default CourseCard
+export default CourseCard;
