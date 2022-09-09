@@ -1,9 +1,11 @@
 footer {
   flex-shrink: 0;
   padding: 0px 3rem;
+  background-color: honeydew;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
   /*display: flex;*/
-  /*position: absolute;*/
-  /*bottom: 0;*/
   /*width: 90%;*/
   /*flex-wrap: wrap;*/
   /*left: 50%;*/

@@ -1,8 +1,4 @@
 import React from 'react'
-// import Browsecourse from './Components/Browsecourse'
-// import HeroHeader from './Components/HeroHeader'
-// import WhyLearn from './Components/WhyLearn'
-// import CtaSection from './Components/CtaSection'
 import { Routes, Route, Link } from 'react-router-dom';
 import Header from "./components/Header";
 import Home from "./pages/Home"; 
@@ -16,13 +12,8 @@ import Footer from "./components/footer";
 export default function Main(props) {
   return (
     <>
+      <div style={{maxWidth: 1020, margin: "0 auto"}}>
       <Header />
-      {/*
-      <HeroHeader/>
-       <Browsecourse/>
-       <WhyLearn/>
-       <CtaSection/>
-     */}
       <ul>
         <li>
           <Link to="/html">HTML</Link>
@@ -51,7 +42,9 @@ export default function Main(props) {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
+
       <Footer />
+      </div>
 
     </>
   );
