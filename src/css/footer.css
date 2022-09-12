@@ -1,34 +1,57 @@
 footer {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  flex-wrap: wrap;
+  flex-shrink: 0;
+  padding: 0px 3rem;
+  background-color: honeydew;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  /*display: flex;*/
+  /*width: 90%;*/
+  /*flex-wrap: wrap;*/
+  /*left: 50%;*/
+  /*transform: translateX(-50%);*/
+  /*-webkit-transform: translateX(-50%);*/
+  /*-moz-transform: translateX(-50%);*/
+  /*-ms-transform: translateX(-50%);*/
+  /*-o-transform: translateX(-50%);*/
 }
-footer div {
+.footercontent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+/*footer div {
   height: 100%;
   cursor: pointer;
-}
+}*/
 div.start {
   font-weight: 500;
   font-size: xx-large;
 }
+
 div.center {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-content: space-between;
-  height: 70px;
-  width: 180px;
-  align-self: flex-start;
+  /*align-content: space-between;*/
+  /*height: 70px;*/
+  /*width: 180px;*/
+  /*align-self: flex-start;*/
   margin-top: 8px;
   font-weight: 600;
   font-size: 0.83rem;
 }
+
+div.center > * {
+  padding: 10px; 
+}
+
 div.end {
-  width: 200px;
+  /*width: 200px;*/
   font-weight: 700;
 }
+
 div.end > div > input:first-of-type {
   outline: 2px solid var(--color-bg, #f8f3ec);
   border: 2px solid var(--color-bg, #f8f3ec);
@@ -42,30 +65,31 @@ div.end > div:last-child {
   height: 30px;
 }
 div.end > div > button {
-  position: relative;
-  top: 1%;
-  right: 39px;
+  /*position: relative;*/
+  /*top: 1%;*/
+  /*right: 39px;*/
   font-weight: bold;
-  border: none;
+  /*border: none;*/
   padding: 0px 10px;
   height: 100%;
   color: white;
   background-color: var(--color-primary, #059669);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
+
 .after {
-  position: absolute;
-  left: 50px;
-  width: 90%;
-  height: fit-content;
+  padding: 20px 0;
+  /*position: relative;*/
+  /*width: 90%;*/
+  /*height: fit-content;*/
 }
 .after::before {
   content: "";
-  position: absolute;
-  width: 100%;
-  height: 5px;
+  /*position: absolute;*/
+  /*width: 100%;*/
+  /*height: 5px;*/
   background-color: var(--color-bg, #f8f3ec);
-  bottom: -15px;
+  /*bottom: -15px;*/
 }
 /* footer {
   display: flex;
@@ -78,12 +102,13 @@ div.end > div > button {
   justify-content: space-around;
   height: 25vh;
 } */
-@media only screen and (max-width: 3000px) {
+/*@media only screen and (max-width: 3000px) {
   footer > div {
     width: 10%;
   }
   .after {
-    bottom: 40px;
+    bottom: 70px;
+    left: 50px;
   }
   div.start {
     text-align: start;
@@ -98,24 +123,29 @@ div.end > div > button {
   footer {
     height: 25vh;
   }
-}
-@media only screen and (max-width: 600px) {
-  footer > div {
+}*/
+@media only screen and (max-width: 787px) {
+  /*footer > div {
     width: 90%;
+    height: fit-content;
   }
   .after {
-    bottom: -50px;
-  }
+    bottom: -10%;
+    left: initial;
+  }*/
   div.start {
     text-align: center;
-    height: 150px;
-    width: 190px;
+    /*height: 50px;*/
+    /*width: 190px;*/
   }
   footer {
-    height: fit-content;
-    margin-bottom: 50px;
+    padding: 0px 1rem;
+    /*height: 350px;*/
+    /*bottom: -35%;*/
+    /*align-content: space-between;*/
+    /*width: 350px;*/
   }
-  footer > div:not(.after) {
+  /*footer > div:not(.after) {
     margin: 15px 0;
-  }
+  }*/
 }
