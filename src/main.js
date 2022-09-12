@@ -1,10 +1,11 @@
-import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom';
+//@ts-nocheck
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./pages/Home"; 
-import Course from "./pages/Course"; 
-import Lesson from "./pages/Lesson"; 
-import About from "./pages/About"; 
+import Home from "./pages/Home";
+import Course from "./pages/Course";
+import Lesson from "./pages/Lesson";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/footer";
 
@@ -42,10 +43,8 @@ export default function Main(props) {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
-
       <Footer />
       </div>
-
     </>
   );
 
