@@ -1,14 +1,29 @@
-# voyage-tasks
+# Geckos
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+A learning Platform catering to the languages of the Web. 
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+## Requirements
+- Node.Js visit [Node JS Website](https://nodejs.org/en/download/) for installation instructions.
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
 
-> Own it & Make it your Own!
+## Installation
+1. Clone the repo
+
+```sh
+git clone https://github.com/chingu-voyages/v40-geckos-team-15.git
+```
+
+2. Install all the packages.
+```sh
+npm install
+```
+
+3. Start the project
+```sh
+npm run dev
+```
+
+4. To build the project, run:
+```sh
+npm run build
+```
