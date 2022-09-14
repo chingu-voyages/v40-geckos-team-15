@@ -8,8 +8,12 @@ function Lesson() {
 
   return(
     <>
-      <p>{ course } : { lesson }</p>
-      <Editor />
+      <div style={{ padding: "50px" }}>
+        <p>{ course } : { lesson }</p>
+      </div>
+      <div style={{ position: "relative", marginBottom: "170px" }}>
+        <Editor />
+      </div>
     </>
   )
 }
