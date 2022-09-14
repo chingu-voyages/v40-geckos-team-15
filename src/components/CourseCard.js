@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CourseCard(props){
   return (
@@ -7,6 +8,11 @@ function CourseCard(props){
       <div className="card-text">
         <h3>{props.course.name}</h3>
         <p>{props.course.description}</p>
+        <Link to={`${props.course.url}`}>
+          <button className='cta-btn'>
+            View HTML Course
+          </button>
+        </Link>
       </div>
     </div>
   )
