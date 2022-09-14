@@ -15,27 +15,6 @@ export default function Main(props) {
     <>
       <div style={{maxWidth: 1020, margin: "0 auto"}}>
       <Header />
-      <ul>
-        <li>
-          <Link to="/html">HTML</Link>
-          <ul>
-            <li>
-              <Link to="/html/lesson-1">Lesson 1</Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link to="/css">CSS</Link>
-          <ul>
-            <li>
-              <Link to="/css/lesson-1">Lesson 1</Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link to="/javascript">Javascript</Link>
-        </li>
-      </ul>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/:course" element={<Course />} />
