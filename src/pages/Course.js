@@ -43,7 +43,7 @@ function Course() {
         }}>
         <strong>
           <p className="h1" style={{padding:"150px 0", textAlign: "center"}}>
-            { courses[2].name}
+            { courses.find(element => element.url === `/${course}`).name }
           </p>
         </strong>
       </div>
@@ -51,10 +51,10 @@ function Course() {
         <img src="https://via.placeholder.com/200x200.png"/> 
         <div style={{padding: "5px 20px"}}>
           <h1>
-            { courses[2].name}
+            { courses.find(element => element.url === `/${course}`).name }
           </h1>
           <p>
-            { courses[2].longdescription}
+            { courses.find(element => element.url === `/${course}`).longdescription }
           </p>
         </div>
       </div>
